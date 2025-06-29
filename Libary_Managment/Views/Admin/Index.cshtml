@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1 class="mb-4">📊 Admin Dashboard</h1>
+
+<div class="row g-4">
+    <div class="col-md-3">
+        <div class="card text-white bg-primary shadow">
+            <div class="card-body">
+                <h5 class="card-title">Total Users</h5>
+                <p class="fs-4 mb-0">120</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-success shadow">
+            <div class="card-body">
+                <h5 class="card-title">Books Issued</h5>
+                <p class="fs-4 mb-0">430</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-warning shadow">
+            <div class="card-body">
+                <h5 class="card-title">Pending Requests</h5>
+                <p class="fs-4 mb-0">15</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="card text-white bg-danger shadow">
+            <div class="card-body">
+                <h5 class="card-title">Overdue Returns</h5>
+                <p class="fs-4 mb-0">7</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5">
+    <h3>Quick Actions</h3>
+    <div class="d-flex flex-wrap gap-3 mt-3">
+        <a class="btn btn-outline-primary" asp-page="/Books/Index">📚 Manage Books</a>
+        <a class="btn btn-outline-secondary" asp-page="/Users/Index">👤 Manage Users</a>
+        <a class="btn btn-outline-success" asp-page="/Reports/Index">📈 View Reports</a>
+        <a class="btn btn-outline-dark" asp-page="/Settings/Index">⚙️ Settings</a>
+    </div>
+</div>
